@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bespoke Women's Tailoring | Stitched to Fit, Made to Feel Beautiful</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream-primary: #fcf9f6;
+            --cream-secondary: #f6f3f0;
+            --cream-tertiary: #f0edea;
+            --text-dark: #060403;
+            --text-muted: #4e4543;
+            --text-label: #9ca3af;
+            --accent-brown: #8e4c40;
+            --accent-gray: #eae8e5;
+            --border-light: #dcdad7;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--cream-primary);
+            line-height: 1.6;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            line-height: 1.2;
+            font-weight: 400;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: -1.12px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            letter-spacing: -1px;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.375rem;
+            letter-spacing: 0.22px;
+            font-weight: 500;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.6875;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--cream-primary);
+            padding: 1.5rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-brown);
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--cream-primary);
+            padding: 5rem 4rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .hero-badge {
+            background-color: #f0edea;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem;
+            border-radius: 0.75rem;
+            width: fit-content;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        }
+
+        .hero-badge-text {
+            color: var(--text-muted);
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.98px;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin: 1rem 0;
+        }
+
+        .hero-title .italic {
+            font-style: italic;
+            color: var(--accent-brown);
+        }
+
+        .hero-description {
+            font-size: 1.0625rem;
+            line-height: 1.625;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            max-width: 500px;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.875rem 2rem;
+            border-radius: 0.125rem;
+            border: none;
+            cursor: pointer;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.55px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary {
+            background-color: var(--text-dark);
+            color: var(--cream-primary);
+        }
+
+        .btn-primary:hover {
+            background-color: #1a1a17;
+        }
+
+        .btn-secondary {
+            background-color: var(--cream-secondary);
+            color: var(--text-dark);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-secondary:hover {
+            background-color: #ede9e6;
+        }
+
+        .hero-highlights {
+            background-color: var(--cream-secondary);
+            padding: 1.5rem;
+            border-radius: 0.25rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .highlight-item {
+            display: flex;
+            gap: 0.5rem;
+            align-items: flex-start;
+        }
+
+        .highlight-title {
+            color: var(--text-dark);
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.32px;
+        }
+
+        .highlight-text {
+            color: var(--text-muted);
+            font-size: 0.8125rem;
+            letter-spacing: 0.13px;
+        }
+
+        .hero-image {
+            position: relative;
+            height: 500px;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-image-badge {
+            position: absolute;
+            background-color: rgba(252, 249, 246, 0.9);
+            backdrop-filter: blur(6px);
+            padding: 0.5rem 1rem;
+            border-radius: 0.125rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-image-badge.top {
+            top: 1rem;
+            right: 1rem;
+        }
+
+        .hero-image-badge.bottom {
+            bottom: 1rem;
+            left: 1rem;
+        }
+
+        .hero-image-badge-text {
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.32px;
+            color: var(--text-dark);
+        }
+
+        .hero-image-subtitle {
+            font-style: italic;
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            text-align: right;
+            margin-top: 0.5rem;
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--cream-secondary);
+            padding: 4.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-image {
+            height: 565px;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(6, 4, 3, 0.8), transparent);
+            padding: 1rem;
+            color: var(--cream-primary);
+        }
+
+        .about-content h3 {
+            color: var(--accent-brown);
+            font-size: 0.6875rem;
+            text-transform: uppercase;
+            letter-spacing: 2.2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .about-content h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .about-description {
+            font-size: 1.0625rem;
+            line-height: 1.625;
+            margin-bottom: 2rem;
+        }
+
+        .tailor-profile {
+            background-color: var(--cream-primary);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+
+        .tailor-profile-header {
+            background-color: var(--cream-secondary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem 0.5rem 0 0;
+            margin: -1.5rem -1.5rem 1rem -1.5rem;
+            padding-top: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .tailor-profile-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            letter-spacing: 0.16px;
+        }
+
+        .tailor-profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .profile-field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile-field-label {
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.55px;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
+        }
+
+        .profile-field-value {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            letter-spacing: 0.16px;
+        }
+
+        .profile-field-value.accent {
+            color: var(--accent-brown);
+        }
+
+        .tailor-profile-description {
+            font-size: 0.8125rem;
+            line-height: 1.5;
+            color: var(--text-muted);
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        /* Services Section */
+        .services {
+            background-color: var(--cream-primary);
+            padding: 4.5rem;
+        }
+
+        .services-header {
+            max-width: 900px;
+            margin-bottom: 3rem;
+        }
+
+        .services-header h3 {
+            color: var(--accent-brown);
+            font-size: 0.6875rem;
+            text-transform: uppercase;
+            letter-spacing: 2.2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .service-card {
+            background-color: var(--cream-secondary);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+            min-height: 500px;
+        }
+
+        .service-icon {
+            width: 3rem;
+            height: 3rem;
+            background-color: var(--cream-primary);
+            border-radius: 0.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-content h3 {
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .service-description {
+            font-size: 0.9375rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-tags {
+            display: flex;
+            flex-direction: column;
+            gap: 0.375rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-tag {
+            background-color: var(--cream-primary);
+            padding: 0.125rem 0.5rem;
+            border-radius: 0.125rem;
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.32px;
+            color: var(--text-muted);
+            width: fit-content;
+        }
+
+        .service-link {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            color: var(--accent-brown);
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.55px;
+            text-decoration: none;
+            transition: gap 0.3s ease;
+        }
+
+        .service-link:hover {
+            gap: 0.5rem;
+        }
+
+        /* Quality Section */
+        .quality {
+            background-color: var(--cream-tertiary);
+            padding: 4.5rem;
+        }
+
+        .quality-header {
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            text-align: center;
+        }
+
+        .quality-header h3 {
+            color: var(--accent-brown);
+            font-size: 0.6875rem;
+            text-transform: uppercase;
+            letter-spacing: 2.2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .quality-header h2 {
+            text-align: center;
+        }
+
+        .quality-header p {
+            text-align: center;
+            font-size: 0.9375rem;
+        }
+
+        .quality-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .quality-card {
+            background-color: var(--cream-primary);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            display: flex;
+            gap: 1rem;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+            height: 140px;
+            align-items: flex-start;
+        }
+
+        .quality-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: var(--accent-gray);
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .quality-content h3 {
+            font-size: 1rem;
+            color: var(--text-dark);
+            margin-bottom: 0.25rem;
+        }
+
+        .quality-content p {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            line-height: 1.3;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background-color: var(--cream-primary);
+            padding: 4.5rem;
+        }
+
+        .gallery-header {
+            max-width: 900px;
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .gallery-header-content h3 {
+            color: var(--accent-brown);
+            font-size: 0.6875rem;
+            text-transform: uppercase;
+            letter-spacing: 2.2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-header-description {
+            max-width: 450px;
+        }
+
+        .gallery-header-description p {
+            font-size: 0.9375rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .gallery-card {
+            background-color: var(--cream-secondary);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            height: 532px;
+            display: flex;
+            flex-direction: column;
+            isolation: isolate;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 460px;
+            background-color: var(--accent-gray);
+            position: relative;
+            overflow: hidden;
+            flex-shrink: 0;
+            z-index: 2;
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(6, 4, 3, 0.7), transparent);
+            opacity: 0.9;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1rem;
+            z-index: 3;
+        }
+
+        .gallery-category {
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.55px;
+            color: var(--border-light);
+        }
+
+        .gallery-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--cream-primary);
+            letter-spacing: 0.16px;
+        }
+
+        .gallery-card-content {
+            background-color: var(--cream-primary);
+            padding: 1rem;
+            flex-grow: 1;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .gallery-card-content p {
+            font-style: italic;
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            letter-spacing: 0.13px;
+        }
+
+        /* Process Section */
+        .process {
+            background-color: var(--cream-secondary);
+            padding: 4.5rem;
+        }
+
+        .process-header {
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            text-align: center;
+        }
+
+        .process-header h3 {
+            color: var(--accent-brown);
+            font-size: 0.6875rem;
+            text-transform: uppercase;
+            letter-spacing: 2.2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .process-header h2 {
+            text-align: center;
+        }
+
+        .process-header p {
+            text-align: center;
+            font-size: 0.9375rem;
+        }
+
+        .process-timeline {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .process-step {
+            background-color: var(--cream-primary);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .process-step-number {
+            width: 3rem;
+            height: 3rem;
+            background-color: var(--accent-gray);
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .process-step.active .process-step-number {
+            background-color: var(--accent-brown);
+            color: var(--cream-primary);
+        }
+
+        .process-step h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        .process-step p {
+            font-size: 0.8125rem;
+            line-height: 1.3;
+            color: var(--text-muted);
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: var(--cream-primary);
+            padding: 4.5rem;
+        }
+
+        .testimonials-header {
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            text-align: center;
+        }
+
+        .testimonials-header h3 {
+            color: var(--accent-brown);
+            font-size: 0.6875rem;
+            text-transform: uppercase;
+            letter-spacing: 2.2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonials-header h2 {
+            text-align: center;
+        }
+
+        .testimonials-header p {
+            text-align: center;
+            font-size: 0.9375rem;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .testimonial-card {
+            background-color: var(--cream-secondary);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .testimonial-stars {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #fbbf24;
+        }
+
+        .testimonial-quote {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.375rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .testimonial-author {
+            background-color: var(--cream-primary);
+            padding: 1rem;
+            border-radius: 0.125rem;
+            margin-top: auto;
+        }
+
+        .testimonial-author-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            letter-spacing: 0.16px;
+        }
+
+        .testimonial-author-title {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            letter-spacing: 0.13px;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: var(--cream-secondary);
+            padding: 4.5rem;
+        }
+
+        .faq-header {
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            text-align: center;
+        }
+
+        .faq-header h3 {
+            color: var(--accent-brown);
+            font-size: 0.6875rem;
+            text-transform: uppercase;
+            letter-spacing: 2.2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-header h2 {
+            text-align: center;
+        }
+
+        .faq-accordion {
+            max-width: 860px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .faq-item {
+            background-color: var(--cream-primary);
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .faq-button {
+            width: 100%;
+            padding: 1.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            letter-spacing: 0.18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-button:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+
+        .faq-arrow {
+            font-size: 0.75rem;
+            transition: transform 0.3s ease;
+            color: var(--text-muted);
+        }
+
+        .faq-item.active .faq-arrow {
+            transform: rotate(180deg);
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 1.5rem;
+        }
+
+        .faq-item.active .faq-content {
+            max-height: 500px;
+            padding: 0 1.5rem 1.5rem 1.5rem;
+        }
+
+        .faq-content p {
+            font-size: 0.9375rem;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--cream-primary);
+            padding: 4.5rem;
+        }
+
+        .contact-header {
+            max-width: 700px;
+            margin-bottom: 3rem;
+        }
+
+        .contact-header h3 {
+            color: var(--accent-brown);
+            font-size: 0.6875rem;
+            text-transform: uppercase;
+            letter-spacing: 2.2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-header h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-header p {
+            font-size: 1.0625rem;
+            line-height: 1.75;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .contact-form {
+            background-color: var(--cream-secondary);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h3 {
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-label {
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.32px;
+            color: var(--text-muted);
+        }
+
+        .form-input,
+        .form-textarea {
+            background-color: var(--cream-primary);
+            border: none;
+            padding: 0.9375rem 1rem;
+            border-radius: 0.125rem;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.9375rem;
+            color: var(--text-dark);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .form-input::placeholder,
+        .form-textarea::placeholder {
+            color: var(--text-label);
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(142, 76, 64, 0.1);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 0.875rem;
+            background-color: var(--text-dark);
+            color: var(--cream-primary);
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.55px;
+            border: none;
+            border-radius: 0.125rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .form-submit:hover {
+            background-color: #1a1a17;
+        }
+
+        .form-submit:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .form-message {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+            display: none;
+        }
+
+        .form-message.success {
+            background-color: #d1fae5;
+            color: #065f46;
+            display: block;
+        }
+
+        .form-message.error {
+            background-color: #fee2e2;
+            color: #991b1b;
+            display: block;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .contact-action-btn {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-action-btn.call {
+            background-color: var(--cream-secondary);
+            color: var(--text-dark);
+        }
+
+        .contact-action-btn.call:hover {
+            background-color: #ede9e6;
+        }
+
+        .contact-action-btn.whatsapp {
+            background-color: var(--accent-brown);
+            color: var(--cream-primary);
+        }
+
+        .contact-action-btn.whatsapp:hover {
+            background-color: #7a3e34;
+        }
+
+        .contact-info-card {
+            background-color: var(--cream-secondary);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-info-item {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-info-label {
+            font-size: 0.6875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.32px;
+            color: var(--text-muted);
+            min-width: 100px;
+        }
+
+        .contact-info-value {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            letter-spacing: 0.16px;
+        }
+
+        .contact-map {
+            width: 100%;
+            height: 224px;
+            background-color: var(--accent-gray);
+            border-radius: 0.5rem;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-map-overlay {
+            backdrop-filter: blur(2px);
+            background-color: rgba(252, 249, 246, 0.9);
+            padding: 1rem;
+            border-radius: 0.25rem;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 10;
+        }
+
+        .contact-map-overlay p {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-dark);
+            color: var(--cream-primary);
+            padding: 3rem 4rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--cream-primary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 2rem;
+            }
+
+            .hero-image {
+                height: 300px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+                padding: 2rem;
+            }
+
+            .about-image {
+                height: 300px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card {
+                min-height: auto;
+            }
+
+            .quality-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-card {
+                height: auto;
+            }
+
+            .gallery-image {
+                height: 250px;
+            }
+
+            .process-timeline {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .process-step {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-form,
+            .contact-info-card {
+                width: 100%;
+            }
+
+            .hero-ctas {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .services-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                gap: 2rem;
+            }
+
+            .services-header-content {
+                flex: 1;
+            }
+
+            .services-header-description {
+                max-width: none;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-logo {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            nav,
+            .hero,
+            .about,
+            .services,
+            .quality,
+            .gallery,
+            .process,
+            .testimonials,
+            .faq,
+            .contact {
+                padding: 1.5rem;
+            }
+
+            .hero-image {
+                height: 200px;
+            }
+
+            .about-image {
+                height: 200px;
+            }
+
+            .gallery-image {
+                height: 150px;
+            }
+
+            .quality-grid,
+            .gallery-grid,
+            .testimonials-grid {
+                gap: 1rem;
+            }
+
+            .quality-card {
+                height: auto;
+                padding: 1rem;
+            }
+
+            .contact-actions {
+                flex-direction: column;
+            }
+
+            .contact-action-btn {
+                width: 100%;
+            }
+
+            .form-group {
+                margin-bottom: 0.75rem;
+            }
+
+            .faq-button {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-logo">Bespoke Tailoring</div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#quality">Why Us</a></li>
+            <li><a href="#gallery">Portfolio</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-toggle">☰</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="hero-badge-text">Haute Couture & Custom Women's Tailoring</span>
+            </div>
+            <h1 class="hero-title">Stitched to Fit. <span class="italic">Made to Feel Beautiful.</span></h1>
+            <p class="hero-description">Thoughtfully tailored women's wear with careful measurements, neat stitching, and a finish made just for you.</p>
+            <div class="hero-ctas">
+                <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Book an Appointment</button>
+                <button class="btn btn-secondary">WhatsApp Us</button>
+            </div>
+            <div class="hero-highlights">
+                <div class="highlight-item">
+                    <div>
+                        <div class="highlight-title">Precision Cut</div>
+                        <div class="highlight-text">Calibrated to your exact posture</div>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <div>
+                        <div class="highlight-title">Hand-Finished</div>
+                        <div class="highlight-text">Intricate basting & neat seams</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://via.placeholder.com/500x500/f0edea/8e4c40?text=Atelier+Tailoring" alt="Atelier tailoring craftsmanship">
+            <div class="hero-image-badge top">
+                <span class="hero-image-badge-text">Hand-Crafted Precision</span>
+            </div>
+            <div class="hero-image-badge bottom">
+                <span class="hero-image-badge-text">Personalized Consultation</span>
+            </div>
+            <div class="hero-image-subtitle">Studio workshop craft table · Ready for bespoke client fitting</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-image">
+            <img src="https://via.placeholder.com/400x565/f0edea/8e4c40?text=Atelier+Workshop" alt="Atelier workspace">
+        </div>
+        <div class="about-content">
+            <h3>About Our Atelier</h3>
+            <h2>Tailoring With Care and Attention to Every Detail</h2>
+            <p class="about-description">With a passion for tailoring and an eye for detail, we focus on creating outfits that fit comfortably and look the way you imagined. From accurate measurements to the final finishing, every piece is handled with care.</p>
+            
+            <div class="tailor-profile">
+                <div class="tailor-profile-header">
+                    <div class="tailor-profile-title">Master Tailor Dossier</div>
+                </div>
+                <div class="tailor-profile-grid">
+                    <div class="profile-field">
+                        <div class="profile-field-label">Shop Name</div>
+                        <div class="profile-field-value">[Shop Name]</div>
+                    </div>
+                    <div class="profile-field">
+                        <div class="profile-field-label">Location</div>
+                        <div class="profile-field-value">[City / Area]</div>
+                    </div>
+                    <div class="profile-field">
+                        <div class="profile-field-label">Master Tailor</div>
+                        <div class="profile-field-value accent">[Tailor's Name]</div>
+                    </div>
+                    <div class="profile-field">
+                        <div class="profile-field-label">Experience</div>
+                        <div class="profile-field-value">[Years of Experience]</div>
+                    </div>
+                </div>
+                <div class="tailor-profile-description">Every client receives undivided attention. From muslin toile fitting to hand-rolled hems, our master tailor supervises all construction phases directly.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-header">
+            <h3>Bespoke Services</h3>
+            <h2>Tailoring Made for You</h2>
+            <p>Precision cutting and hand-stitched craft suited to everyday elegance, festival grace, and milestone occasions.</p>
+        </div>
+
+        <div class="services-grid">
+            <!-- Service Card 1 -->
+            <div class="service-card">
+                <div>
+                    <div class="service-icon">
+                        <span>👔</span>
+                    </div>
+                    <h3>Blouse Stitching</h3>
+                    <p class="service-description">Carefully stitched for a comfortable and flattering fit.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Bespoke Necklines</span>
+                        <span class="service-tag">Custom Darting</span>
+                        <span class="service-tag">Padding Options</span>
+                    </div>
+                </div>
+                <a href="#contact" class="service-link">Enquire for this service →</a>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="service-card">
+                <div>
+                    <div class="service-icon">
+                        <span>🥻</span>
+                    </div>
+                    <h3>Churidar & Salwar Stitching</h3>
+                    <p class="service-description">Tailored according to your preferred style and measurements.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Classic & Straight</span>
+                        <span class="service-tag">Anarkali Cuts</span>
+                        <span class="service-tag">Precision Pleats</span>
+                    </div>
+                </div>
+                <a href="#contact" class="service-link">Enquire for this service →</a>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="service-card">
+                <div>
+                    <div class="service-icon">
+                        <span>👗</span>
+                    </div>
+                    <h3>Dress Stitching</h3>
+                    <p class="service-description">Custom stitching for everyday wear and special occasions.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Evening Gowns</span>
+                        <span class="service-tag">Linen Daywear</span>
+                        <span class="service-tag">Traditional Kurtas</span>
+                    </div>
+                </div>
+                <a href="#contact" class="service-link">Enquire for this service →</a>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="service-card">
+                <div>
+                    <div class="service-icon">
+                        <span>✨</span>
+                    </div>
+                    <h3>Custom Stitching</h3>
+                    <p class="service-description">Bring your idea or design, and we'll work towards creating it.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Pattern Drafting</span>
+                        <span class="service-tag">Fabric Consultation</span>
+                        <span class="service-tag">Unique Silhouettes</span>
+                    </div>
+                </div>
+                <a href="#contact" class="service-link">Enquire for this service →</a>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div class="service-card" style="grid-column: span 2;">
+                <div>
+                    <div class="service-icon">
+                        <span>🔧</span>
+                    </div>
+                    <h3>Alterations & Fitting</h3>
+                    <p class="service-description">Adjustments to help your existing outfits fit better.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Precise Hemming</span>
+                        <span class="service-tag">Waist & Shoulder Tapering</span>
+                        <span class="service-tag">Resizing Heirloom Garments</span>
+                        <span class="service-tag">Seam Reinforcement</span>
+                    </div>
+                </div>
+                <a href="#contact" class="service-link">Enquire for this service →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Section -->
+    <section class="quality" id="quality">
+        <div class="quality-header">
+            <h3>Quiet Dedication</h3>
+            <h2>Because the Right Fit Makes a Difference</h2>
+            <p>A bespoke garment does not merely wear well—it honors your posture, movement, and individual ease without compromise.</p>
+        </div>
+
+        <div class="quality-grid">
+            <div class="quality-card">
+                <div class="quality-icon">📏</div>
+                <div class="quality-content">
+                    <h3>Precise measurements</h3>
+                    <p>We take individualized point-to-point anatomical measurements to ensure true balance.</p>
+                </div>
+            </div>
+
+            <div class="quality-card">
+                <div class="quality-icon">🧵</div>
+                <div class="quality-content">
+                    <h3>Neat and careful stitching</h3>
+                    <p>Clean seam margins, sturdy overlocking, and straight basting without hurried bunching.</p>
+                </div>
+            </div>
+
+            <div class="quality-card">
+                <div class="quality-icon">✂️</div>
+                <div class="quality-content">
+                    <h3>Quality finishing</h3>
+                    <p>Concealed hems, reinforced hook-and-eyes, and smooth lining that feels gentle against skin.</p>
+                </div>
+            </div>
+
+            <div class="quality-card">
+                <div class="quality-icon">🎨</div>
+                <div class="quality-content">
+                    <h3>Custom designs</h3>
+                    <p>Bring clippings, sketches, or reference photos; we shape your fabric into your exact vision.</p>
+                </div>
+            </div>
+
+            <div class="quality-card">
+                <div class="quality-icon">👥</div>
+                <div class="quality-content">
+                    <h3>Personal attention</h3>
+                    <p>One-on-one time with your tailor to examine neck drops, sleeve lengths, and garment drape.</p>
+                </div>
+            </div>
+
+            <div class="quality-card">
+                <div class="quality-icon">🛋️</div>
+                <div class="quality-content">
+                    <h3>Comfortable fitting</h3>
+                    <p>Garments crafted for effortless movement throughout day-long celebrations or daily routines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="gallery-header">
+            <div class="gallery-header-content">
+                <h3>Studio Archive</h3>
+                <h2>See Our Work</h2>
+                <div class="gallery-header-description">
+                    <p>Take a look at some of our tailoring work and the attention given to every stitch and finish.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <div class="gallery-image">
+                    <img src="https://via.placeholder.com/500x460/f0edea/8e4c40?text=Blouse+Stitching" alt="Blouse Stitching">
+                    <div class="gallery-image-overlay">
+                        <div class="gallery-category">Category 01</div>
+                        <div class="gallery-title">Blouse Stitching</div>
+                    </div>
+                </div>
+                <div class="gallery-card-content">
+                    <p>Placeholder for genuine photograph of Blouse Stitching — ready for customer upload.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-image">
+                    <img src="https://via.placeholder.com/500x460/f0edea/8e4c40?text=Finished+Garments" alt="Finished Garments">
+                    <div class="gallery-image-overlay">
+                        <div class="gallery-category">Category 02</div>
+                        <div class="gallery-title">Finished Garments</div>
+                    </div>
+                </div>
+                <div class="gallery-card-content">
+                    <p>Placeholder for genuine photograph of Finished Garments — ready for customer upload.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-image">
+                    <img src="https://via.placeholder.com/500x460/f0edea/8e4c40?text=Custom+Designs" alt="Custom Designs">
+                    <div class="gallery-image-overlay">
+                        <div class="gallery-category">Category 03</div>
+                        <div class="gallery-title">Custom Designs</div>
+                    </div>
+                </div>
+                <div class="gallery-card-content">
+                    <p>Placeholder for genuine photograph of Custom Designs — ready for customer upload.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-image">
+                    <img src="https://via.placeholder.com/500x460/f0edea/8e4c40?text=Detail+Work" alt="Detail & Finishing Work">
+                    <div class="gallery-image-overlay">
+                        <div class="gallery-category">Category 04</div>
+                        <div class="gallery-title">Detail & Finishing Work</div>
+                    </div>
+                </div>
+                <div class="gallery-card-content">
+                    <p>Placeholder for genuine photograph of Detail & Finishing Work — ready for customer upload.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-image">
+                    <img src="https://via.placeholder.com/500x460/f0edea/8e4c40?text=Shop+Interior" alt="Shop Interior & Fabric Rolls">
+                    <div class="gallery-image-overlay">
+                        <div class="gallery-category">Category 05</div>
+                        <div class="gallery-title">Shop Interior & Fabric Rolls</div>
+                    </div>
+                </div>
+                <div class="gallery-card-content">
+                    <p>Placeholder for genuine photograph of Shop Interior & Fabric Rolls — ready for customer upload.</p>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-image">
+                    <img src="https://via.placeholder.com/500x460/f0edea/8e4c40?text=Tailor+at+Work" alt="Tailor at Work">
+                    <div class="gallery-image-overlay">
+                        <div class="gallery-category">Category 06</div>
+                        <div class="gallery-title">Tailor at Work</div>
+                    </div>
+                </div>
+                <div class="gallery-card-content">
+                    <p>Placeholder for genuine photograph of Tailor at Work — ready for customer upload.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="process-header">
+            <h3>The Atelier Process</h3>
+            <h2>From Your Idea to the Perfect Fit</h2>
+            <p>A calm, transparent step-by-step pathway from your first consultation to slipping on your tailored piece.</p>
+        </div>
+
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="process-step-number">01</div>
+                <h3>Choose Your Design</h3>
+                <p>Bring your design, reference, or idea.</p>
+            </div>
+
+            <div class="process-step">
+                <div class="process-step-number">02</div>
+                <h3>Visit the Shop</h3>
+                <p>Discuss what you need and the style you prefer.</p>
+            </div>
+
+            <div class="process-step active">
+                <div class="process-step-number">03</div>
+                <h3>Measurements</h3>
+                <p>We'll take the measurements needed for your outfit.</p>
+            </div>
+
+            <div class="process-step">
+                <div class="process-step-number">04</div>
+                <h3>Stitching & Finishing</h3>
+                <p>Your outfit is carefully stitched and finished.</p>
+            </div>
+
+            <div class="process-step">
+                <div class="process-step-number">05</div>
+                <h3>Collect Your Outfit</h3>
+                <p>Your custom-tailored outfit is ready.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-header">
+            <h3>Customer Experiences</h3>
+            <h2>What Our Customers Say</h2>
+            <p>Authentic feedback from patrons who value thoughtful craftsmanship and honest service.</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <div class="testimonial-quote">"Add a genuine customer review here."</div>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-name">[Customer Name / Local Area]</div>
+                    <div class="testimonial-author-title">Verified Atelier Patron</div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <div class="testimonial-quote">"Add another genuine customer review here."</div>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-name">[Customer Name / Local Area]</div>
+                    <div class="testimonial-author-title">Verified Atelier Patron</div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <div class="testimonial-quote">"Add a genuine customer review here."</div>
+                <div class="testimonial-author">
+                    <div class="testimonial-author-name">[Customer Name / Local Area]</div>
+                    <div class="testimonial-author-title">Verified Atelier Patron</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="faq-header">
+            <h3>Clarity & Guidance</h3>
+            <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-accordion">
+            <div class="faq-item">
+                <button class="faq-button">
+                    <span>Do I need to bring a reference design?</span>
+                    <span class="faq-arrow">↓</span>
+                </button>
+                <div class="faq-content">
+                    <p>Not necessarily. You can describe your vision verbally, bring inspiration photos, or we can work with you to develop a design that complements your style. Our master tailor is experienced in creating custom designs based on your preferences and body shape.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button">
+                    <span>Do you provide alterations?</span>
+                    <span class="faq-arrow">↓</span>
+                </button>
+                <div class="faq-content">
+                    <p>Yes, we offer comprehensive alteration services including hemming, tapering, resizing, and seam reinforcement. Whether it's adjusting an existing garment or fixing an heirloom piece, our skilled team ensures every alteration maintains the garment's original quality and appearance.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button">
+                    <span>How long will my stitching take?</span>
+                    <span class="faq-arrow">↓</span>
+                </button>
+                <div class="faq-content">
+                    <p>Timeline depends on the complexity of your design and our current workload. Simple alterations typically take 1-2 weeks, while custom stitching usually takes 2-4 weeks. We prioritize quality over speed and will provide you with a specific estimate after your consultation.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button">
+                    <span>Can I request a custom design?</span>
+                    <span class="faq-arrow">↓</span>
+                </button>
+                <div class="faq-content">
+                    <p>Absolutely! Custom design is one of our specialties. You can bring sketches, photographs, fabric swatches, or describe your vision in detail. Our master tailor will work with you through the design process, providing recommendations based on your body type and style preferences.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-button">
+                    <span>Do I need an appointment?</span>
+                    <span class="faq-arrow">↓</span>
+                </button>
+                <div class="faq-content">
+                    <p>Yes, we recommend scheduling an appointment to ensure dedicated one-on-one time with our team. This allows us to provide personalized attention to your measurements, design preferences, and fabric selection without rushing. You can book via WhatsApp or phone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-header">
+            <h3>Studio & Inquiries</h3>
+            <h2>Let's Create Something That Fits You Perfectly</h2>
+            <p>Have a design in mind? Contact us or visit our shop to discuss your tailoring requirements.</p>
+        </div>
+
+        <div class="contact-container">
+            <!-- Form -->
+            <div class="contact-form">
+                <h3>Send a Fitting Inquiry</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Your Full Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            class="form-input" 
+                            placeholder="e.g. Eleanor Vance" 
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="form-input" 
+                            placeholder="e.g. eleanor@example.com" 
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone / WhatsApp Number</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            class="form-input" 
+                            placeholder="e.g. +1 (555) 019-2834" 
+                            required
+                        >
+                    </div>
+
+                    <button type="submit" class="form-submit">Submit Fitting Request</button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="contact-details">
+                <div class="contact-actions">
+                    <button class="contact-action-btn call" onclick="alert('Call functionality - add your phone number here')">
+                        <span>📞</span> Call Now
+                    </button>
+                    <button class="contact-action-btn whatsapp" onclick="alert('WhatsApp functionality - add your WhatsApp number here')">
+                        <span>💬</span> WhatsApp Us
+                    </button>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-info-item">
+                        <div class="contact-info-label">Address</div>
+                        <div class="contact-info-value">[Shop Address]</div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-label">Phone</div>
+                        <div class="contact-info-value">[Phone Number]</div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-label">WhatsApp</div>
+                        <div class="contact-info-value">[WhatsApp Number]</div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-label">Opening Hours</div>
+                        <div class="contact-info-value">[Opening Hours]</div>
+                    </div>
+                </div>
+
+                <div class="contact-map">
+                    <div class="contact-map-overlay">
+                        <div style="font-weight: 600; color: var(--text-dark); margin-bottom: 0.5rem;">[Shop Address]</div>
+                        <p>Ready for Google Maps embed or directions navigation link.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bespoke Women's Tailoring. All rights reserved. | Stitched to Fit, Made to Feel Beautiful.</p>
+    </footer>
+
+    <script>
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbycqdi5xpGYLhQrHH--v3G5Cf1Zd9y1q7Seo8eGD_dIB2V15x80bDgVrv4jsI5RnSReDg/exec';
+
+        // FAQ Accordion
+        const faqButtons = document.querySelectorAll('.faq-button');
+        faqButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+
+            if (!name || !email || !phone) {
+                showError('Please fill in all fields');
+                return;
+            }
+
+            // Disable submit button
+            const submitButton = contactForm.querySelector('.form-submit');
+            submitButton.disabled = true;
+            submitButton.textContent = 'Submitting...';
+
+            try {
+                const url = SCRIPT_URL + '?' + new URLSearchParams({name, email, phone});
+                
+                await fetch(url, {
+                    method: 'GET',
+                    mode: 'no-cors'
+                });
+
+                showSuccess();
+                contactForm.reset();
+            } catch (error) {
+                showError('An error occurred. Please try again.');
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Submit Fitting Request';
+            }
+        });
+
+        function showSuccess() {
+            formMessage.textContent = 'Thank you! Your fitting inquiry has been received. We will contact you soon.';
+            formMessage.className = 'form-message success';
+            setTimeout(() => {
+                formMessage.className = 'form-message';
+            }, 5000);
+        }
+
+        function showError(message) {
+            formMessage.textContent = message;
+            formMessage.className = 'form-message error';
+            setTimeout(() => {
+                formMessage.className = 'form-message';
+            }, 5000);
+        }
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({behavior: 'smooth'});
+                }
+            });
+        });
+    </script>
+</body>
+</html>
